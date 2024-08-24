@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #efeff0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 1100px;
+    height: 448px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid orangered;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+.cart-left{
+    width: 600px;
+    overflow: hidden;
+}
+
+.main-image{
+    display: flex;
+    transition: all 0.5s ease;
+}
+
+.image-selector{
+    display: flex;
+    margin-top: 3px;
+}
+
+.img{
+    border: 2px solid #fff;
+}
+
+.active{
+    border-color: orangered;
+}
+
+.card-right{
+    padding: 10px;
+}
+
+.card-right h2{
+    font-weight: 400;
+}
+
+.star{
+    border: none;
+    background-color: unset;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.star-gruop .star{
+    color: gray;
+}
+
+/* .star-gruop ion-icon:nth-child(1),
+.star-gruop ion-icon:nth-child(2),
+.star-gruop ion-icon:nth-child(3){
+    color: red;
+} */
+
+.card-right h4{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.card-right h4 span{
+    text-decoration: line-through;
+    color: rgb(0,0,0,0.2);
+    font-size: 13px;
+    padding-left: 15px;
+}
+
+.card-right  p{
+   margin-top: 25px 0;
+   color:rgb( 0,0,0,0.5);
+   padding: 25px 0;
+}
+
+.form{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.form-gruop label,
+.form-gruop select{
+    display: block;
+}
+
+.form-gruop select{
+    display: flex;
+}
+
+.input-gruop select{
+    width: 150px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+}
+
+.input-gruop input{
+   width: 50px;
+   border: 1px solid #ccc;
+   outline: none;
+   text-align: center;
+}
+
+.input-gruop{
+    /* background-color: red; */
+    display: flex;
+    width: 220px;
+    height: 30px;
+}
+
+.input-gruop button{
+    width: 30px;
+    border: 1px solid;
+    outline: none;
+    border: none;
+    background-color: #111;
+    color: #fff;
+}
+
+.btn{
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: orangered;
+}
+
+.limit{
+    animation: blinking 0.5s infinite;
+}
+
+@keyframes blinking {
+    0%{color: red};
+    100%{color: red};
+}
+

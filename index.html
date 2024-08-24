@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="cart-left">
+            <div class="main-image">
+                <img src="./image/image1.jpg">
+                <img src="./image/image4.jpg">
+                <img src="./image/image3.jpg">
+                <img src="./image/image2.jpg">
+            </div>
+            <div class="image-selector">
+                <div class="img active">
+                    <a href="#" data-id="1"><img src="./image/image1.jpg"></a>
+                </div>
+                <div class="img">
+                    <a href="#" data-id="2"><img src="./image/image4.jpg"></a>
+                </div>
+                <div class="img">
+                    <a href="#" data-id="3"><img src="./image/image3.jpg"></a>
+                </div>
+                <div class="img">
+                    <a href="#" data-id="4"><img src="./image/image2.jpg"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-right">
+            <h2>Image Download</h2>
+            <div class="stars">
+                <div class="star-gruop">
+                    <button class="star">&#9734</button>
+                    <button class="star">&#9734</button>
+                    <button class="star">&#9734</button>
+                    <button class="star">&#9734</button>
+                    <button class="star">&#9734</button>
+                </div>
+                <span id="review">0 Reviews</span>
+            </div>
+            <h4 id="price">$39.00 <span>$50.00</span></h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum fugiat voluptas assumenda sed
+                perspiciatis, porro hic animi consectetur aspernatur exercitationem ducimus eos vero necessitatibus
+                modi, saepe quod, repellat nihil soluta.</p>
+
+            <div class="form">
+                <div class="form-group">
+                    <label id="txt">Color</label>
+                    <div class="input-gruop" id="input-gruop">
+                        <select>
+                            <option value="1" data-id="1">Black</option>
+                            <option value="2" data-id="2">Red</option>
+                            <option value="3" data-id="3">Green</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label id="limited">Quantity</label>
+                    <div class="input-gruop">
+                        <button id="minus">-</button>
+                        <input type="text" id="qty" value="1">
+                        <button id="plus">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn">Add Cart</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
