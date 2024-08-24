@@ -77,17 +77,17 @@ function updatePriceAndLimit(qty) {
 
 // Handling color selection
 const colorSelect = document.querySelector('select');
-const txt = document.querySelector('#txt');
+const box = document.querySelector('#box');
 
 colorSelect.addEventListener('change', event => {
     const selectedOption = event.target.options[event.target.selectedIndex];
     const selectedColor = parseInt(selectedOption.dataset.id);
 
-    const borderColor = selectedColor === 1 ? 'black' :
+    const boxColor = selectedColor === 1 ? 'black' :
         selectedColor === 2 ? 'red' : 'green';
 
-    txt.style.color = borderColor;
-    colorSelect.style.borderColor = borderColor;
+    box.style.backgroundColor = boxColor;
+    colorSelect.style.borderColor = boxColor;
 });
 
 // Handling star rating
