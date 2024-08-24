@@ -159,7 +159,8 @@ img{
     width: 50px;
     height: 10px;
     display: inline-block;
-    transform: translateX(63px);
+    transform: translateX(60px);
+     border-radius: 5px;
 }
 
 .limit{
