@@ -109,3 +109,17 @@ stars.forEach((star, index) => {
         });
     });
 });
+
+const card = document.querySelector('.card-design');
+const addCard = document.querySelector('.btn');
+const removeCard = document.querySelector('#closeBtn');
+
+
+addCard.addEventListener('click' , ()=>{
+    card.style.display = 'block';
+});
+
+removeCard.addEventListener('click' , ()=>{
+  
+    card.style.display = 'none';
+});
